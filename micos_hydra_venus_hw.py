@@ -30,7 +30,7 @@ class MicosHydraTtHW(HardwareComponent):
     def setup(self):
         s = self.settings
 
-        s.New("port", str, initial="COM1", description='COMx, see device manager')
+        s.New("port", str, initial="COM3", description='COMx, see device manager')
         s.New("baudrate", int, initial=115200)  # default per manual sec. 3
 
         xy_kwargs = dict(dtype=float, unit='mm', spinbox_decimals=5, spinbox_step=0.1)
